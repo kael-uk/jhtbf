@@ -1,0 +1,7 @@
+# 排除 Git 相关大文件
+.git/
+.gitattributes
+.gitignore
+.idea/
+# 可选排除其他无用文件
+node_modules/
