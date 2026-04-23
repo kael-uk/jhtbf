@@ -1,7 +1,8 @@
-# 排除 Git 相关大文件
+# 强制排除 git 所有文件（必加）
 .git/
-.gitattributes
-.gitignore
-.idea/
-# 可选排除其他无用文件
+# 其他不需要部署的冗余文件
 node_modules/
+.temp/
+.cache/
+.idea/
+.vscode/
