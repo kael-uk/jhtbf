@@ -1,0 +1,9 @@
+require 'net/http'
+urls = ['http://www.jhtbf.cn', 'http://www.jhtbf.com', 'http://www.jhtbf.com.cn']
+uri = URI.parse('http://data.zz.baidu.com/urls?site=www.jhtbf.cn&token=RyllNkhitYNSwLFv')
+req = Net::HTTP::Post.new(uri.request_uri)
+req.body = urls.join("\n")
+req.content_type = 'text/plain'
+res = Net::HTTP.start(uri.hostname, uri.port) { |http| http.request(req) }
+puts res.body
+								

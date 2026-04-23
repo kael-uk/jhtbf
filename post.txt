@@ -1,0 +1,9 @@
+POST /urls?site=www.jhtbf.cn&token=RyllNkhitYNSwLFvHTTP/1.1
+User-Agent: curl/7.12.1
+Host: data.zz.baidu.com
+Content-Type: text/plain
+Content-Length: 83
+
+http://www.jhtbf.cn
+http://www.jhtbf.com
+http://www.jhtbf.com.cn
